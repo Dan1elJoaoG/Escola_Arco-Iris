@@ -1,0 +1,1050 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+.DivHeader{
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    height: 9vh;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 30% 70%;
+    box-shadow: 0 8px 32px rgba(48, 48, 48, 0.15);
+    z-index: 9999999999999999;
+}
+.Logo{
+    object-fit: cover;
+}
+.DivLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivTextoHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TextoHeader{
+    margin-right: 4%;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333333;
+    transition: 0.3s ease-in-out;
+}
+.TextoHeader:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #DD2727;
+    text-decoration-color: #DD2727;
+    transition: 0.3s;
+}
+.BotaoAgendar{
+    width: 15%;
+    height: 45%;
+    background-color: #DD2727;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.BotaoAgendar:hover{
+    background-color: #333333;
+    transition: 0.3s;
+}
+.Calendario{
+    width: 27%;
+    height: 80%;
+}
+.DivPropaganda{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ImagemPropaganda{
+    height: 95%;
+    width: auto;
+}
+.DivSobreNos{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #F5F5F5;
+      opacity: 0;
+  transform: translateX(-80px);   /* começa deslocada para a esquerda */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.DivNossosDiferenciais.visible, .DivSobreNos.visible, .DivNiveisDeEnsino.visible, .DivMetodologia.visible, .NossaEstrutura.visible, .DivContato.visible {
+    opacity: 1;
+  transform: translateX(0);
+}
+.DivTextoSobreNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.TituloSobreNos{
+    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;                 /* espaço entre a linha e o texto */
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #333;
+  margin: 0;
+}
+
+.TituloSobreNos::before {
+  content: "";
+  width: 80px;               /* comprimento da linha */
+  height: 4px;               /* espessura da linha */
+  background: #e53935;       /* vermelho */
+  margin-left: 5%;
+}
+.TextoSobreNos{
+    width: 90%;
+    margin: 0;
+    font-size: 20px;
+    color: #333333;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 600;
+}
+.DivFotoSobreNos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FotoSobreNos{
+    height: 90%;
+    width: auto;
+}
+.DivNossosDiferenciais{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 35% 65%;
+     opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.TextoNossosDiferenciais{
+    font-size: 50px;
+    color: #333333;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 800;
+}
+span{
+    color: #DD2727;
+}
+.DivDivsNossosDiferenciais{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 24% 1%;
+}
+.DivDasDivsNossosDiferenciais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivVerdadeiraNossosDiferenciais{
+    width: 100%;
+    height: 60%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Coração{
+    height: 45%;
+    width: auto;
+}
+.TituloNossosDiferenciais{
+    font-size: 23px;
+    color: #DD2727;
+    margin: 0;
+    margin-top: 4%;
+    font-weight: 700;
+}
+.TextoTextoNossosDiferenciais{
+    font-size: 19px;
+    color: #333333;
+    margin: 0;
+    margin-top: 4%;
+    text-align: center;
+    font-weight: 700;
+}
+.primeiro{
+    border-left: 2px solid black;
+}
+.ultimo{
+    border-right: 2px solid black ;
+}
+.DivNiveisDeEnsino{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #F5F5F5;
+    opacity: 0;
+  transform: translateX(-80px);   /* começa deslocada para a esquerda */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.DivDivsNiveisDeEnsino{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.DivCentralizarNiveisDeEnsino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoNiveisDeEnsino{
+    width: 85%;
+    height: 85%;
+    background-color: #333333;
+    border-radius: 15px;
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 65% 35%;
+}
+.DivTextoNiveisDeEnsino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.DivImagemNiveisDeEnsino{
+    background-image: url(Edc_Infantil.png);
+    background-size: cover;
+    background-position: bottom;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid black ;
+}
+.TituloNiveisDeEnsino{
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+}
+.TextoNiveisDeEnsino{
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    margin-top: 3%;
+    text-align: center;
+    font-weight: 600;
+}
+.DivFundoNiveisDeEnsino2{
+    width: 85%;
+    height: 85%;
+    background-color: #DD2727;
+    border-radius: 15px;
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 65% 35%;
+}
+.DivImagemNiveisDeEnsino2{
+    width: 100%;
+    background-image: url(Ensino_Fundamental.png);
+    background-size: cover;
+    background-position: bottom;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid black ;
+}
+.DivMetodologia{
+    width: 100%;
+    height: 40vh;
+        opacity: 0;
+  transform: translateX(80px);   /* começa deslocada para a esquerda */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.NossaEstrutura{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #F5F5F5;
+    opacity: 0;
+  transform: translateX(-80px);   /* começa deslocada para a esquerda */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.carrossel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;   /* cada slide "encaixa" ao rolar */
+  scroll-behavior: smooth;
+  scrollbar-width: none;           /* esconde a barra no Firefox */
+}
+
+.slides::-webkit-scrollbar {
+  display: none;                   /* esconde a barra no Chrome/Safari */
+}
+
+.slide {
+  flex: 0 0 100%;                  /* 1 slide por vez (use 50% para 2, 33.33% para 3) */
+  scroll-snap-align: start;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  font-size: 2rem;
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #e53935;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.seta.esquerda { left: 10px; }
+.seta.direita  { right: 10px; }
+
+.slide img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;   /* preenche o espaço, cortando as bordas se precisar */
+  border-radius: 15px;
+  object-position: center;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.DivCarrosel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#meuDialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);   /* escurece o fundo */
+  backdrop-filter: blur(6px);       /* deixa o fundo turvo */
+  -webkit-backdrop-filter: blur(6px); /* compatibilidade com Safari */
+}
+
+#dialogImagem {
+  border: none;
+  padding: 0;
+  background: transparent;
+  max-width: 95vw;
+  max-height: 95vh;
+  overflow: visible;
+}
+
+#dialogImagem::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+#dialogImagem img {
+  display: block;
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;     /* mostra a foto inteira, sem cortar */
+  border-radius: 8px;
+}
+
+#dialogImagem .fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #e53935;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.slide img {
+  cursor: zoom-in;
+}
+
+.DivContato{
+    width: 100%;
+    height: 60vh;
+        opacity: 0;
+  transform: translateX(80px);   /* começa deslocada para a esquerda */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+.DivFraseContato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.DivForms{
+    display: grid;
+    grid-template-rows: 20% 20% 40% 20%;
+    grid-template-columns: 50% 50%;
+}
+.Formcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+}
+.Nome{
+    width: 90%;
+    height: 60%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.Nome::placeholder{
+    font-size: 15px;
+}
+.FormcenterMensagem{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Mensagem{
+    width: 90%;
+    height: 85%;
+    border-radius: 15px;
+    border: 1px solid black;
+    display: flex;
+    align-items: start;
+}
+.Mensagem::placeholder{
+    font-size: 15px;
+}
+.texto{
+    margin-top: 10%;
+}
+.FormcenterBotão{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BotãoForms{
+    width: 95%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: #DD2727;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+}
+.papel{
+    width: 4%;
+    margin-left: 2%;
+}
+.DivMapsEZapzap{
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+.DivSobreNos,
+.DivNossosDiferenciais,
+.DivNiveisDeEnsino,
+.DivMetodologia,
+.NossaEstrutura,
+.DivContato{
+  padding-block: 25px;       /* aumenta 40px em cima e 40px embaixo */
+  box-sizing: content-box;   /* o padding soma ao height, em vez de comer o espaço dele */
+}
+.Mapas{
+    width: 80%;
+    height: 70%;
+    border-radius: 15px;
+    margin-left: 5%;
+}
+.DivMaps{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.TextoLocalização{
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+.DivLocalização{
+    width: 94%;
+    margin-left: 5%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.point{
+    width: 7%;
+}
+.TextoMaps{
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0px;
+    margin-left: 1%;
+    transition: 0.3s ease-in-out;
+}
+.TextoMaps:hover{
+    color: #DD2727;
+    transition: 0.3s;
+}
+.DivZap{
+    display: flex;
+    flex-direction: column;
+}
+.Zap{
+    width: 8%;
+    height: auto;
+}
+.DivDivZap{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 93%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+.TextoZap{
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 1%;
+    transition: 0.3s ease-in-out;
+}
+
+.Rodape{
+    width: 100%;
+    height: 20vh;
+    background-color: #333333;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.DivLogoRodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.TextoRodape{
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+.Copyright{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.TextoCopyright{
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+.TextoZap {
+  cursor: pointer;
+}
+.TextoMaps {
+  cursor: pointer;
+}
+.TextoZap:hover{
+    color: #DD2727;
+    transition: 0.3s;
+}
+.TextoInsta{
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 1%;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+.TextoInsta:hover{
+    color: #DD2727;
+    transform: 0.3s;
+}
+
+@media (max-width: 1024px) {
+    .DivHeader {
+        grid-template-columns: 22% 78%;
+    }
+ 
+    .TextoHeader {
+        font-size: 13px;
+        margin-right: 3%;
+    }
+ 
+    .BotaoAgendar {
+        width: auto;
+        padding: 0 14px;
+        font-size: 12px;
+    }
+ 
+    .Calendario {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+    }
+ 
+    .TextoAgenda {
+        margin: 0;
+    }
+ 
+    .TextoSobreNos {
+        font-size: 16px;
+    }
+ 
+    .TextoNossosDiferenciais {
+        font-size: 34px;
+    }
+ 
+    .TituloNossosDiferenciais {
+        font-size: 18px;
+    }
+ 
+    .TextoTextoNossosDiferenciais {
+        font-size: 15px;
+    }
+ 
+    .TituloNiveisDeEnsino {
+        font-size: 20px;
+    }
+ 
+    .TextoNiveisDeEnsino {
+        font-size: 16px;
+    }
+}
+ 
+/* ---------- Celular (até 768px) ---------- */
+@media (max-width: 768px) {
+ 
+    /* Âncoras não ficam escondidas atrás do header fixo */
+    [id] {
+        scroll-margin-top: 110px;
+    }
+ 
+    img {
+        max-width: 100%;
+    }
+ 
+    /* ----- HEADER: logo em cima, menu rolável embaixo ----- */
+    .DivHeader {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+ 
+    .DivLogo {
+        padding: 6px 0 0;
+    }
+ 
+    .Logo {
+        height: 48px;
+        width: auto;
+        max-width: 100%;
+    }
+ 
+    .DivTextoHeader {
+        justify-content: flex-start;
+        gap: 18px;
+        padding: 8px 14px 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+ 
+    .DivTextoHeader::-webkit-scrollbar {
+        display: none;
+    }
+ 
+    .TextoHeader {
+        margin-right: 0;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+ 
+    .BotaoAgendar {
+        width: auto;
+        height: auto;
+        padding: 8px 14px;
+        flex-shrink: 0;
+        border-radius: 12px;
+    }
+ 
+    .Calendario {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+ 
+    .TextoAgenda {
+        margin: 0;
+        font-size: 13px;
+    }
+ 
+    /* ----- PROPAGANDA ----- */
+    .DivPropaganda {
+        height: auto;
+    }
+ 
+    .ImagemPropaganda {
+        width: 100%;
+        height: auto;
+    }
+ 
+    /* ----- SEÇÕES: uma coluna, altura automática ----- */
+    .DivSobreNos,
+    .DivNossosDiferenciais,
+    .DivNiveisDeEnsino,
+    .DivMetodologia,
+    .NossaEstrutura,
+    .DivContato {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding-block: 28px;
+    }
+ 
+    .TituloSobreNos {
+        font-size: 22px;
+        gap: 12px;
+    }
+ 
+    .TituloSobreNos::before {
+        width: 40px;
+        margin-left: 5%;
+    }
+ 
+    .TextoSobreNos {
+        width: 90%;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+ 
+    .TextoNossosDiferenciais {
+        font-size: 28px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+        margin-right: 5%;
+    }
+ 
+    .DivFotoSobreNos {
+        padding-top: 20px;
+    }
+ 
+    .FotoSobreNos {
+        width: 90%;
+        height: auto;
+    }
+ 
+    /* ----- DIFERENCIAIS: grade 2x2 ----- */
+    .DivDivsNossosDiferenciais {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 16px 5% 0;
+    }
+ 
+    .DivDasDivsNossosDiferenciais {
+        padding: 0;
+    }
+ 
+    .DivVerdadeiraNossosDiferenciais {
+        height: 100%;
+        padding: 16px 8px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+ 
+    .primeiro,
+    .ultimo {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+ 
+    .Coração {
+        width: 44px;
+        height: 44px;
+    }
+ 
+    .TituloNossosDiferenciais {
+        font-size: 16px;
+        text-align: center;
+    }
+ 
+    .TextoTextoNossosDiferenciais {
+        font-size: 14px;
+    }
+ 
+    .TextoTextoNossosDiferenciais br {
+        display: none;
+    }
+ 
+    /* ----- NÍVEIS DE ENSINO: cards empilhados ----- */
+    .DivDivsNiveisDeEnsino {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 16px;
+    }
+ 
+    .DivFundoNiveisDeEnsino,
+    .DivFundoNiveisDeEnsino2 {
+        width: 90%;
+        height: auto;
+        grid-template-rows: 190px auto;
+    }
+ 
+    .DivTextoNiveisDeEnsino {
+        padding: 16px 12px;
+    }
+ 
+    .TituloNiveisDeEnsino {
+        font-size: 20px;
+    }
+ 
+    .TextoNiveisDeEnsino {
+        font-size: 15px;
+    }
+ 
+    .TextoNiveisDeEnsino br {
+        display: none;
+    }
+ 
+    /* ----- ESTRUTURA / CARROSSEL ----- */
+    .DivCarrosel {
+        padding-top: 16px;
+    }
+ 
+    .carrossel {
+        width: 100%;
+    }
+ 
+    .slide {
+        height: 240px;
+    }
+ 
+    .slide img {
+        width: 90%;
+    }
+ 
+    .seta {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+ 
+    #dialogImagem img {
+        max-width: 98vw;
+        max-height: 85vh;
+    }
+ 
+    /* ----- CONTATO ----- */
+    .DivFraseContato {
+        align-items: flex-start;
+    }
+ 
+    .texto {
+        margin-top: 0;
+    }
+ 
+    .DivForms {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        padding: 16px 0;
+    }
+ 
+    .Formcenter {
+        padding: 6px 0;
+    }
+ 
+    .Nome {
+        width: 90%;
+        height: 46px;
+        padding: 0 14px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+ 
+    .FormcenterMensagem,
+    .FormcenterBotão {
+        grid-column: auto;
+        padding: 6px 0;
+    }
+ 
+    .Mensagem {
+        width: 90%;
+        height: 120px;
+        padding: 0 14px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+ 
+    .BotãoForms {
+        width: 90%;
+        height: 48px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+ 
+    .papel {
+        width: 18px;
+        margin-left: 8px;
+    }
+ 
+    /* ----- MAPA, TELEFONE E INSTAGRAM ----- */
+    .DivMapsEZapzap {
+        grid-template-rows: auto auto;
+        gap: 12px;
+    }
+ 
+    .Mapas {
+        width: 90%;
+        height: 240px;
+        margin-left: 5%;
+    }
+ 
+    .TextoLocalização {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+ 
+    .DivLocalização {
+        width: 90%;
+        height: auto;
+        margin-top: 12px;
+        gap: 8px;
+    }
+ 
+    .point {
+        width: 26px;
+        flex-shrink: 0;
+    }
+ 
+    .TextoMaps {
+        font-size: 15px;
+        margin-left: 0;
+    }
+ 
+    .DivZap {
+        gap: 8px;
+    }
+ 
+    .DivDivZap {
+        width: 90%;
+        height: auto;
+        gap: 8px;
+        margin-top: 6px;
+    }
+ 
+    .Zap {
+        width: 28px;
+        flex-shrink: 0;
+    }
+ 
+    .TextoZap,
+    .TextoInsta {
+        font-size: 16px;
+        margin: 0;
+    }
+ 
+    /* ----- RODAPÉ ----- */
+    .Rodape {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 24px 16px 16px;
+        text-align: center;
+        gap: 12px;
+    }
+ 
+    .DivLogoRodape img {
+        max-width: 150px;
+        height: auto;
+    }
+ 
+    .TextoRodape {
+        font-size: 14px;
+        margin: 8px 0 0;
+    }
+ 
+    .Copyright {
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .TextoCopyright {
+        font-size: 13px;
+        margin: 0;
+    }
+}
+ 
+/* ---------- Celular pequeno (até 480px) ---------- */
+@media (max-width: 480px) {
+    .TituloSobreNos {
+        font-size: 20px;
+    }
+ 
+    .TextoSobreNos {
+        font-size: 15px;
+    }
+ 
+    .TextoNossosDiferenciais {
+        font-size: 24px;
+    }
+ 
+    .DivDivsNossosDiferenciais {
+        grid-template-columns: 1fr;
+    }
+ 
+    .DivVerdadeiraNossosDiferenciais {
+        padding: 18px 12px;
+    }
+ 
+    .slide {
+        height: 200px;
+    }
+ 
+    .Mapas {
+        height: 210px;
+    }
+}
